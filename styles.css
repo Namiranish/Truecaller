@@ -512,3 +512,100 @@ header {
 
 /* iphone-section  */
 
+.iphone-section{
+    background-color: #f2f2f2;
+    display: flex;
+    height: 60vh;
+    
+    &> img{
+        width: 50%;
+    }
+}
+
+.iphone-details{
+    width: 42%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & > h3{
+        font-size: 20px;
+        color: #0a6cff;
+    }
+
+    & > h1{
+        font-size: 48px;
+        letter-spacing: -0.67px;
+        line-height: 48px;
+
+        & > span{
+            color: #0a6cff;
+        }
+    }
+
+    & > p{
+        font-size: 16px;
+        color: #2d2d2dcf;
+    }
+}
+
+.iphone-btn{
+    color:  #0a6cff;;
+    font-size: 12px;
+    width: 140px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px #0a6cff solid;
+    font-weight:700;
+}
+
+/* // impact-section  */
+
+.impact-section{
+    display: flex;
+    height: 68vh;
+    
+    &> img{
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+.impact-details{
+    width: 43%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & > h3{
+        font-size: 20px;
+        color: #0a6cff;
+    }
+
+    & > h1{
+        font-size: 48px;
+        letter-spacing: -0.67px;
+        line-height: 48px;
+
+        & > span{
+            color: #0a6cff;
+        }
+    }
+
+    & > p{
+        font-size: 16px;
+        color: #2d2d2dcf;
+    }
+}
+
+.impact-btn{
+    color:  #0a6cff;;
+    font-size: 12px;
+    width: 140px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px #0a6cff solid;
+    font-weight:700;
+}
