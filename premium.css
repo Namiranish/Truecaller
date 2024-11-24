@@ -1,0 +1,284 @@
+/* Reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  
+}
+.navbar{
+  height: 160px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.navbar1{
+  display: flex;
+  align-items: center;
+}
+.truecaller{
+  font-family: 'Montserrat', sans-serif; /* Or 'Poppins', sans-serif */
+  font-size: 24px;
+  font-weight: 700;
+  color: #0078ff; /* Truecaller's signature blue */
+  text-decoration: none;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.hamburger {
+
+  color: rgba(10, 108, 255);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.hamburger i {
+  font-size: 3rem; /* Increase icon size */
+  color: rgba(10, 108, 255); /* Set icon color */
+}
+.btn2 {
+  height: 110px;
+  width: 270px;
+  padding: 1.5rem 4rem;
+  background-color: #0078ff;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  
+}
+
+/* Premium Section */
+.premium-section {
+  background-color: #e5f3ff;
+  display: flex;
+  height: 1000px;
+}
+
+.container {
+  margin-left: 20px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: left;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 10px;
+}
+
+
+
+
+.premium-topic {
+  padding-top: 40px;
+  font-size: 40px;
+  color:  #0078ff;
+  font-weight: 700;
+  
+  margin-bottom: 1rem;  
+}
+
+.premium-text h1 {
+  font-size: 120px;
+
+  font-weight: 700;
+  letter-spacing: -5px;
+  color: rgba(34, 34, 34);
+  margin-bottom: 1.5rem;
+}
+
+.premium-text p {
+  line-height: 50px;
+  font-size: 35px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.text-brand {
+  color: #0078ff;
+}
+
+.btn {
+  height: 110px;
+  width: 270px;
+  padding: 1.5rem 4rem;
+  background-color: #0078ff;
+  color: white;
+  font-size: 1.35rem;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+
+/* Ensuring the image takes the full width and covers the container */
+.premium-image {
+  padding-left: 800px;
+  padding-top: 100px;
+  object-fit: cover;
+  
+}
+
+.second{
+  background-color: #F2F2F2;
+  padding-top: 160px;
+}
+.go-premium{
+  font-size: 70px;
+  font-weight: 700;
+  color: rgba(34, 34, 34);
+  margin-bottom: 1.5rem;
+  margin-left: 40px;
+}
+.go-premium-p{
+  line-height: 50px;
+  font-size: 35px;
+  color: #555;
+  margin-left: 40px;
+  margin-bottom: 2rem;
+}
+.our-features{
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+  padding-top: 150px;
+
+}
+.our-features h2{
+  font-size: 70px;
+  font-weight: 800;
+  color: rgba(34, 34, 34);
+  letter-spacing: -2px;
+}
+.our-features img{
+  height: 140px;
+  width: 140px;
+}
+.features{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  row-gap: 60px;
+  padding: 20px;
+  padding-top: 50pxS;
+  
+  /* Spacing between items */
+  
+  
+}
+.icon{
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+.icon h4{
+  font-size: 30px;
+  font-weight: 700;
+}
+.icon p{
+  padding-top: 10px;
+  font-size: 25px;
+}
+.icon img{
+  height: 190px;
+  width: 190px;
+  padding-left: 25px;
+  object-fit: cover;
+}
+.text{
+  line-height: 40px;
+}
+.only{
+  margin-top: 30px;
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 40px;
+}
+.third{
+  background-color: #F2F2F2;
+  padding-top: 140px;
+}
+
+
+
+.choose-your-plan{
+  padding-left: 30px;
+}
+.choose-your-plan h1{
+  font-size: 120px;
+  font-weight: 700;
+}
+.choose-your-plan p{
+  font-size: 30px;
+  line-height: 55px;
+}
+.plans{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  margin-top: 150px;
+}
+.plans img{
+  width: 30vw;
+}
+.fst{
+  padding-top: 80px;
+
+}
+.snd{
+  padding-top: 80px;
+}
+.review{
+  padding-top: 140px ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  padding-left: 100px;
+  background-color: #F2F2F2;
+
+}
+.rating{
+  height: 150px;
+  padding: 110px;
+  background-color: white;
+  width: 30vw;
+  height: 90px;
+}
+.rating h3{
+  font-size: 50px;
+}
+.rating p{
+  padding-top: 10px;
+  font-size: 25px;
+  line-height: 50px;
+}
+.rating i{
+  color:  gold; 
+  font-size: 24px;
+}
