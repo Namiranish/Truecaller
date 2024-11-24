@@ -514,9 +514,9 @@ header {
 
 .posterBg {
     width: 100%;
-    height: 136px;
     background-color: #ffffff;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .poster {
@@ -525,12 +525,13 @@ header {
     justify-content: center;
     padding-top: 48px;
     width: 100%;
+    gap: 50px;
 }
 
 .poster img {
     width: auto;
     height: 40px;
-    padding-right: 48px;
+  
 }
 
 /* iphone-section  */
@@ -739,7 +740,8 @@ header {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 40px;
+    
+    background-color: #f2f2f2;
 
     & > img{
         height: 485px;
@@ -753,6 +755,7 @@ header {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+    margin-top: 40px;
 
     & > h3{
         color: #0a6cff;
@@ -837,10 +840,15 @@ footer{
     background-color: #0b49b4;
 }
 
-.footer-section{
-    display: flex;
+.fotter{
+    height: 700px;
     margin: auto;
     width: 82%;
+}
+
+.footer-section{
+    display: flex;
+    
     gap: 40px;
 }
 
@@ -883,6 +891,7 @@ footer{
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
+    
 }
 .footer-button {
     background-color: #ffffff;
@@ -910,6 +919,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 30px;
+        
     & > p {
         color: white;
         font-size: 24px;
@@ -1053,7 +1063,18 @@ footer{
             margin-left: 100px;
     }
     
+    .fotter{
+        height: 700px;
+        margin: auto;
+        width: 89%;
+    }
+
+.first-footer-detail{
+    margin-bottom: 50px;
 }
+}
+
+
 @media screen and (max-width: 1450px) {
     .hero-section {
         margin-left: 70px;
@@ -1068,7 +1089,17 @@ footer{
     .hero-section {
             margin-left: 40px;
     }
-    
+    .fotter{
+        height: 700px;
+        margin: auto;
+        width: 95%;
+    }
+
+    .dwnld-container {  
+        &>.dwnld-button-tc {
+            padding: 6px;
+    }
+}
 }
 
 @media screen and (max-width: 1300px) {
@@ -1101,3 +1132,128 @@ footer{
     }
 }
 
+@media screen and (max-width: 1280px) {
+    
+.feature-text {
+  &>p {
+        width: 70%;
+    }
+}
+}
+@media (max-width: 1250px) {
+    .download-container{
+        width: 50%;
+    }
+    .dwnld-container {
+        
+        &>.dwnld-button-tc {
+            padding: 6px;
+            width: 350px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1180px) {
+    .median{  
+        & > .line{
+            width: 250px;   
+         }
+        }
+
+        .iphone-details{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .poster {
+            gap: 35px;
+        }
+        .iphone-section{ 
+            &> img{
+                width: 40%;
+                margin: auto;
+                height: 350px;
+                transition: 0.3 ease;
+            }
+        }
+
+        .dwnld-container {
+        
+            &>.dwnld-button-tc {
+                padding: 6px;
+                width: 350px;
+            }
+        }
+}
+
+@media screen and (max-width: 1080px) {
+/* //icons  */
+
+.dwnld-container {
+    flex-wrap: wrap;
+
+    &>.dwnld-button-tc {
+        width: 250px;
+    }
+}
+#gp-btn{
+    display: flex;
+    &> .button-content{
+        width: 230px;
+        padding-left: 35px;
+    }
+}
+#ios-btn{
+        width: 95%;
+    
+}
+
+}
+@media screen and (max-width: 1050px) {
+    .median{  
+        & > .line{
+            width: 200px;   
+         }
+        }
+        
+        .poster {
+            gap: 20px;
+        }
+        
+    }
+
+    @media screen and (max-width: 1030px) {
+        .download-section{
+           display: flex;
+           flex-direction: column-reverse;
+            gap: 30px;
+            align-items: center;
+            & > img{
+                height: 485px;
+                width: 480px;
+            }
+          }
+          .download-container{
+            width: 90%;
+    }
+    .dwnld-container {
+        flex-wrap: nowrap;
+    
+        &>.dwnld-button-tc {
+            width: 250px;
+        }
+    }
+    #gp-btn{
+        display: flex;
+        &> .button-content{
+            width: 230px;
+            padding-left: 35px;
+        }
+    }
+    #ios-btn{
+            width: 230px;
+        
+    }
+    }
+    
+    
