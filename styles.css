@@ -90,15 +90,19 @@ header {
 
 .dropdown select {
     background-color: transparent;
-    border: 1px solid white;
-    color: black;
-    font-size: 14px;
-    padding: 5px 10px;
+    border:none;
+    color:white;
+    font-size: 16px;
+    width: 40px;
+    height: 25px;
     border-radius: 5px;
     appearance: none;
     cursor: pointer;
+    font-weight: 600;
+    background-color: transparent;
+    padding-left: 20px;
+    
 }
-
 .dropdown .fa-caret-down {
     color: white;
     font-size: 14px;
@@ -140,7 +144,6 @@ header {
     justify-content: flex-start;
     margin-left: 130px;
     width: 40%;
-    height: 350px;
     padding: 40px 0px;
     gap: 20px;
 
@@ -304,14 +307,13 @@ header {
 /* //feature-section  */
 
 .feature-section {
-    height: 100vh;
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 70px;
-
+    margin-bottom: 50px;
 }
 
 .feature-details {
@@ -427,7 +429,6 @@ header {
 /* //section Our fight against spam in 2023  */
 
 .trust-section {
-    height: 95vh;
     background-color: #042d6b;
     color: white;
 }
@@ -491,6 +492,7 @@ header {
     border-radius: 30px;
     color: #0a6cff;
     font-weight: 600;
+    margin-bottom: 50px;
 }
 
 /* //brand-logo-section  */
@@ -520,7 +522,6 @@ header {
 .iphone-section{
     background-color: #f2f2f2;
     display: flex;
-    height: 60vh;
     
     &> img{
         width: 50%;
@@ -569,10 +570,11 @@ header {
 
 .impact-section{
     display: flex;
-    height: 68vh;
+  
     
     &> img{
         width: 50%;
+        height: 560px;
         object-fit: cover;
     }
 }
@@ -623,17 +625,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 68vh;
+
   }
   
   .article-conatiner {
-    height: 60vh;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    margin-top: 20px;
+    gap: 40px;
+    margin-top: 35px;
 
     & > h3{
         font-size: 40px;
@@ -662,6 +664,7 @@ header {
     border-radius: 25px;
     overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
   }
   
   .box img {
@@ -717,12 +720,16 @@ header {
   /* //download-today-section */
 
   .download-section{
-    height: 57vh;
     display: flex;
     gap: 30px;
     width: 80%;
     margin: auto;
     margin-top: 40px;
+
+    & > img{
+        height: 485px;
+        width: 460x;
+    }
   }
 
   .download-container{
@@ -768,7 +775,7 @@ header {
         border-radius: 30px;
         align-items: center;
         padding: 10px;
-        width: 250px;
+        width: 300px;
         justify-content: center;
 
         &>img {
@@ -811,7 +818,6 @@ header {
 
 
 footer{
-    height: 80vh;
     background-color: #0b49b4;
 }
 
@@ -897,6 +903,7 @@ footer{
 .tc-features{
     display: flex;
     gap: 10px;
+    margin-bottom: 80px;
     & > p {
         color: white;
     }
@@ -1018,3 +1025,5 @@ footer{
     color: #033ba3;
     font-size: 15px;
 }
+
+/* ........//media query starts from here ........  */
