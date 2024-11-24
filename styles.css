@@ -383,8 +383,11 @@ header {
     max-width: 200px;
     margin: 0 auto;
     display: block;
-    filter: grayscale(70%);
-    transition: filter 0.3s ease;
+    opacity: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    position: relative;
+    bottom: 0;
+    transform-origin: bottom center;
 }
 
 .feature-card-button {
@@ -405,8 +408,10 @@ header {
 }
 
 .feature-card:hover .phone-image {
-    filter: grayscale(0%);
-}
+    transform: scale(1.09); 
+    opacity: 1;
+   
+  }
 
 .feature-card:hover .feature-card-button {
     background: #007bff;
@@ -636,10 +641,15 @@ header {
       }
       
   }
-  
   .article-box {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & > a{
+        text-decoration: none;
+    }
   }
   
   .box {
@@ -648,49 +658,58 @@ header {
     background-color: #ffffff;
     width: 286px;
     height: 345px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 25px;
-
-    & > img {
-        width: 100%;
-        height: 130px;
-        object-fit: cover;
-     
-      }
-
-    & > h4 {
-        font-size: 12px;
-        text-align: left;
-        padding: 20px;
-        color: #2d2d2deb;
-
-        & > 
-        .fa-solid {
-          color: red;
-          padding-right: 2px;
-       
-        }
-      }
-
-    & >  h3 {
-        font-size: 20px;
-        line-height: 28px;
-        text-align: left;
-        padding: 20px;
-        padding-bottom: 5px;
-      }
-    
-      & > h6 {
-        font-size: 12px;
-        line-height: 13.5px;
-        text-align: start;
-        padding: 20px;
-        letter-spacing: 1px;
-        color: #9ea5ab;
-      }
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-
-
+  
+  .box img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .box h4 {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 20px 0;
+    color: #2d2d2deb;
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    margin-bottom: 5px; 
+    margin-top: 6px;
+  }
+  
+  .box h4 .fa-solid {
+    color: red;
+  }
+  
+  .box h3 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    padding: 10px 20px;
+    flex-grow: 1; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    color: black;
+    
+  }
+  
+  .box h6 {
+    font-size: 12px;
+    line-height: 13.5px;
+    text-align: start;
+    padding: 5px 20px 20px;
+    letter-spacing: 1px;
+    color: #9ea5ab;
+  }
+  
   #green{
     color: #33b73e;
   }
