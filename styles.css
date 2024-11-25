@@ -346,13 +346,14 @@ header {
         &>p {
             font-size: 36px;
             font-weight: 600;
+            &>span {
+                font-size: 36px;
+                font-weight: 600;
+                color: #0a6cff;
+            }
         }
 
-        &>span {
-            font-size: 36px;
-            font-weight: 600;
-            color: #0a6cff;
-        }
+        
     }
 }
 
@@ -840,15 +841,11 @@ footer{
     background-color: #0b49b4;
 }
 
-.fotter{
-    height: 700px;
-    margin: auto;
-    width: 82%;
-}
 
 .footer-section{
     display: flex;
-    
+    width: 80%;
+    margin: auto;
     gap: 40px;
 }
 
@@ -924,7 +921,15 @@ footer{
         color: white;
         font-size: 24px;
         margin-top: 53px;
+
+        #arrow{
+            display: none;
+        }
     }
+ }
+ .topics{
+    display: flex;
+    gap: 10px;
  }
 .tc-features{
     display: flex;
@@ -977,6 +982,9 @@ footer{
     color: white;
     font-size: 24px;
     margin-top: 53px;
+    #arrow{
+        display: none;
+    }
 }
 }
 .about-hiring{
@@ -1007,6 +1015,9 @@ footer{
     width: 90%;
     margin: auto;
    
+    .endd{
+        display: flex;
+    }
 }
 
 .end-bottom{
@@ -1053,6 +1064,12 @@ footer{
 }
 
 /* ........//media query starts from here ........  */
+
+@media screen and (max-width: 1550px) {
+    .footer-section{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 1520px) {
     .median{  
         & > .line{
@@ -1079,6 +1096,10 @@ footer{
     .hero-section {
         margin-left: 70px;
 }
+.end-links{
+    width: auto;
+}
+
 }
 @media screen and (max-width: 1400px) {
     .median{  
@@ -1099,6 +1120,30 @@ footer{
         &>.dwnld-button-tc {
             padding: 6px;
     }
+}
+}
+
+@media screen and (max-width: 1385px) {
+    .footer-section{
+        width: 96%;
+    }
+    
+
+.tc-features{
+& > p {
+    color: white;
+}
+
+& > .part-1{ 
+    & > ul{
+            gap: 20px;
+    }
+}
+& > .part-2{
+    & > ul{
+        gap: 20px;
+}
+}
 }
 }
 
@@ -1130,8 +1175,54 @@ footer{
             display: flex;
         }
     }
+    .footer-section{
+        width: 96%;
+
+    }
+    
+.tc-features{
+gap: 50px;
+
+& > .part-1{
+
+    & > ul{
+            gap: 8px;
+        & > a{
+            & > li{        
+                font-size: 12px;        
+            }
+        }
+    }
+}
+& > .part-2{
+    & > ul{
+        gap: 8px;
+    & > a{
+        & > li{
+            font-size: 12px;
+        }
+    }
+}
+}
+}
+.footer-button {
+    width: 180px;
+    height: 50px; 
 }
 
+
+.footer-logo-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+    & > .language{
+        width: 178px;
+        height: 70px;
+       
+    }
+}
+}
 @media screen and (max-width: 1280px) {
     
 .feature-text {
@@ -1151,6 +1242,10 @@ footer{
             width: 350px;
         }
     }
+    .end-bottom{
+    width: auto;   
+    }
+
 }
 
 
@@ -1208,6 +1303,36 @@ footer{
     
 }
 
+
+.iphone-section{
+    background-color: #f2f2f2;
+    display: flex;
+    
+    &> img{
+        width: 50%;
+    }
+}
+
+.iphone-details{
+    width: 52%;
+    margin-left: 20px
+}
+
+.iphone-btn{
+    color:  #0a6cff;;
+    font-size: 12px;
+    width: 140px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px #0a6cff solid;
+    font-weight:700;
+}
+.footer-section{
+    display: flex;
+    width: 96%;
+    margin: auto;
+    gap: 20px;
+}
 }
 @media screen and (max-width: 1050px) {
     .median{  
@@ -1220,6 +1345,12 @@ footer{
             gap: 20px;
         }
         
+        .poster img {
+        width: auto;
+        height: 30px;
+}
+
+
     }
 
     @media screen and (max-width: 1030px) {
@@ -1254,6 +1385,108 @@ footer{
             width: 230px;
         
     }
+    .footer-section{
+        gap: 10px;
+    }
+    .tc-features{
+        gap: 5px; 
     }
     
+}
     
+@media screen and (max-width: 910px) {
+
+.feature-section {
+    width: 90%;
+}
+
+
+.footer-section{
+    display: flex;
+    width: 96%;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+} 
+.first-footer-detail{
+    display: flex;
+    flex-direction: column;
+    height: 5px;
+    & > p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        #arrow{
+            display: block;
+        }
+ }
+} 
+.tc-about-us{
+    height: 48px;
+    & > p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        #arrow{
+            display: block;
+        }
+    }
+}
+.tc-features{
+    display: none;
+}
+.topics{
+    display: flex;
+    flex-direction: column;
+}
+.topics{
+    display: flex;
+    gap: 10px;
+ }
+
+ .footer-logo-container{
+    display: flex;
+    & > .language{
+        width: 860px;
+        height: 70px;
+    }
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+.footer-button {
+    width: 440px;
+    height: 55px;
+    padding: 6px 10px;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+.end-part{
+   height: auto;
+}
+
+.end-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+   
+    .endd{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.end-social-icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+}
