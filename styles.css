@@ -15,15 +15,21 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+    
 }
+.divv{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
 
+}
 header {
     margin-top: 15px;
     display: flex;
     justify-content: space-around;
+    gap: 50px;
     align-items: center;
-
-    
 }
  .logo-container{
     display: flex;
@@ -32,6 +38,7 @@ header {
     &>a {
         &>img {
             filter: invert();
+            width: 120px;
         }
     }
 }
@@ -56,7 +63,7 @@ header {
 
 
             &>li {
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 700;
                 color: white;
             }
@@ -165,6 +172,7 @@ header {
         font-size: 60px;
         line-height: 60px;
         color: white;
+        margin-top: 50px;
     }
 }
 
@@ -182,7 +190,7 @@ header {
         gap: 10px;
         border-radius: 30px;
         align-items: center;
-        padding: 10px;
+        padding: 10px 12px;
 
         &>img {
             width: 30px;
@@ -265,6 +273,7 @@ header {
     border-radius: 30px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    margin-bottom: 20px
 }
 
 
@@ -1677,7 +1686,7 @@ height: 30px;
         max-width: 600px;
         position: relative;
         top: 100px;
-        
+       
     
         & > h1 {
             font-size: 30px;
@@ -2261,11 +2270,12 @@ height: 30px;
             url("assets(namira)/main-img.png");
         background-repeat: no-repeat;
         background-size: 300%; 
-        background-position: center;
         display: flex;
         flex-direction: column;
+        background-size: cover;
     }
-    
+
+   
     .hero-section {
         display: flex;
         flex-direction: column;
@@ -2355,7 +2365,25 @@ height: 30px;
         margin-top: 20px; 
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 391px){
+    .button-container {
+        width: 100%;
+    }
+    .button-content{
+        position: relative;
+        right:10px ;
+    }
+    .button-tc, .hero-button, .search-container {
+        width: 90%; /* Make all elements take up 90% of the screen width */
+    }
+    .footer-button {
+        &> .button-content{
+         position: relative;
+         left: 90px;
+        }
+         }
+}
+@media screen and (max-width: 376px){
     .download-section{
         & > img{
             height: 280px;
@@ -2368,7 +2396,7 @@ height: 30px;
             linear-gradient(to top, rgba(4, 45, 107, 1), rgba(4, 45, 107, 0)),
             url("assets(namira)/main-img.png");
         background-repeat: no-repeat;
-        background-size: 300%;
+        background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
