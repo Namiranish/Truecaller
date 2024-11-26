@@ -112,6 +112,8 @@ header {
     padding-left: 20px;
     
 }
+
+
 .dropdown .fa-caret-down {
     color: white;
     font-size: 14px;
@@ -328,7 +330,9 @@ header {
     margin-top: 70px;
     margin-bottom: 50px;
 }
-
+#sf-2{
+    display: none;
+}
 .feature-details {
     display: flex;
     flex-direction: column;
@@ -394,9 +398,9 @@ header {
 .feature-card-content {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-
 .phone-image {
-    width: 100%;
+    width: 84%; /* Make the image smaller and responsive */
+    max-width: 250px; /* Optional: Limit the maximum width */
     margin: 0 auto;
     display: block;
     opacity: 50%;
@@ -490,7 +494,7 @@ header {
     text-align: center;
 
     &>h1 {
-        font-size: 40px;
+        font-size: 48px;
     }
 
     &>p {
@@ -1513,7 +1517,6 @@ gap: 50px;
     width: 90%;
 }
 
-
 .footer-section{
     display: flex;
     width: 96%;
@@ -1655,6 +1658,114 @@ height: 30px;
     }
     
 }
+
+@media screen and (max-width: 770px) {
+    .main-section {
+        background-image: 
+            linear-gradient(to bottom, rgba(4, 45, 107, 1), rgba(4, 45, 107, 0)),
+            url("assets(namira)/main-img.png");
+        background-repeat: no-repeat;
+        background-size: 160%;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        position: relative;
+        top: 100px;
+        
+    
+        & > h1 {
+            font-size: 30px;
+            text-align: center;
+            line-height: 1.2;
+            color: white;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    }
+    
+    .button-tc {
+        background-color: #0087ff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        gap: 10px;
+        border-radius: 30px;
+        align-items: center;
+        width: 90%; 
+    }
+    
+    .button-tc img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 170px;
+    }
+    
+    .button-tc span {
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        padding: 5px;
+    }
+    
+    .hero-button {
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 265px;
+    }
+    
+    .google-play {
+        flex: 0 0 60%; 
+        padding: 10px 15px;
+    }
+    
+    .google-play img {
+        width: 30px;
+        height: 35px; 
+    }
+    .button-content{
+        margin-left: 50px;
+    }
+    .app-store {
+        flex: 0 0 35%; 
+        padding: 8px 12px; 
+    }
+    
+    .app-store img {
+        width: 20px;
+        height: 25px;
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 540px;
+        height: 50px;
+        margin-bottom: 50px; 
+    }
+    
+}
+
 @media screen and (max-width: 750px) {
     
     .dwnld-container {
@@ -1677,6 +1788,20 @@ height: 30px;
     #ios-btn{
             width: 40%;
         
+    }
+
+    #sf-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        margin: auto;
+        height: 55px;
+        margin-bottom: 80px;
+        
+    }
+    #sf-1{
+        display: none;
     }
 }
 @media screen and (max-width: 700px) {
@@ -1750,7 +1875,94 @@ height: 30px;
 .poster img {
     height: 21px;
     }
-
+    .main-section {
+        background-image: 
+            linear-gradient(to top, rgba(4, 45, 107, 1), rgba(4, 45, 107, 0)),
+            url("assets(namira)/main-img.png");
+        background-repeat: no-repeat;
+        background-size: 200%; 
+       background-position: top;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        width: 400px;
+        
+    
+        & > h1 {
+            font-size: 25px;
+           
+            text-align: start;
+            line-height: 1.2;
+            color: white;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    }
+    
+    .button-tc {
+        background-color: #0087ff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        gap: 10px;
+        border-radius: 30px;
+        align-items: center;
+        width: 100%; 
+    }
+    
+    .button-tc img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 80px;
+    }
+    
+    .button-tc span {
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        padding: 5px;
+    }
+    
+    .hero-button {
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 195px;
+    }
+   
+    .button-content{
+        margin-left: 20px;
+    }
+   
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 400px;
+        height: 50px;
+        margin-bottom: 50px; 
+    }
+    
 }
 
 @media screen and (max-width: 505px) {
@@ -1780,18 +1992,98 @@ height: 30px;
              height: 60px;
          }
      }
-     #gp-btn{
-         display: flex;
-         width: 45%;
-         &> .button-content{
-             width: 230px;
-             padding-left: 25px;
-         }
-     }
+
      #ios-btn{
              width: 45%;
          
      }
+     .main-section {
+        background-image: 
+            linear-gradient(to top, rgba(4, 45, 107, 1), rgba(4, 45, 107, 0)),
+            url("assets(namira)/main-img.png");
+        background-repeat: no-repeat;
+        background-size: 300%; 
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        width: 400px;
+        
+    
+        & > h1 {
+            font-size: 25px;
+           
+            text-align: start;
+            line-height: 1.2;
+            color: white;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    }
+    
+    .button-tc {
+        background-color: #0087ff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        gap: 10px;
+        border-radius: 30px;
+        align-items: center;
+        width: 100%; 
+    }
+    
+    .button-tc img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 80px;
+    }
+    
+    .button-tc span {
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        padding: 5px;
+    }
+    
+    .hero-button {
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 195px;
+    }
+   
+    .button-content{
+        margin-left: 20px;
+    }
+   
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 400px;
+        height: 50px;
+        margin-bottom: 50px; 
+    }
+    
 }
 
 @media screen and (max-width: 460px){
@@ -1805,17 +2097,33 @@ height: 30px;
             height: 60px;
         }
     }
+    .footer-button {
+        width: 90%; /* Scale button to 90% of its container */
+    }
     #gp-btn{
+        width: 90%;
+        height: 55px;
+        padding: 3px 0px;
+        gap: 5px;
+        margin-bottom: 5px;
         display: flex;
-        width: 43%;
-        &> .button-content{
-            width: 180px;
-            padding-left: 25px;
+        
+        & > .button-content{
+            position: relative;
+            right: 20px;
         }
     }
+    
     #ios-btn{
-            width: 40%;
-        
+        width: 90%;
+        height: 55px;
+        padding: 3px 5px;
+        gap: 5px;
+        margin-bottom: 5px;
+        & > .button-content{
+            position: relative;
+            right: 40px;
+        }
     }
     .poster img {
         height: 15px;
@@ -1829,7 +2137,16 @@ height: 30px;
             margin-top: 60px;
         }
     }
+
+/* .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 50px; */
+
     
+
     .median{
         gap: 12px;
     
@@ -1890,14 +2207,264 @@ height: 30px;
       
     }
   }
-}
 
+}
+@media screen and (max-width: 430px){
+    .button-tc {
+        gap: 10px;
+        width: 90%; /* Adjust width to be 90% of the screen size */
+        margin-left: auto; /* Center align for better responsiveness */
+        margin-right: auto;
+    }
+    
+    .button-tc img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .hero-button {
+        width: 90%; /* Set the width to 90% of the screen size */
+        margin-left: auto; /* Center align for better responsiveness */
+        margin-right: auto;
+
+        & > .button-content{
+            & > img{
+                margin-left: 90px;
+            }
+        }
+    }
+    
+    .search-container {
+        width: 90%; /* Ensure it matches the button's width */
+        height: 50px;
+        margin-bottom: 50px;
+        margin-left: auto; /* Center align for better responsiveness */
+        margin-right: auto;
+    }
+    
+    /* Optional Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+        .button-tc,
+        .hero-button,
+        .search-container {
+            width: 90%; /* Maintain proportional width on smaller screens */
+        }
+    }
+    
+}
+@media screen and (max-width:415px) {
+
+    .main-section {
+        background-image: 
+            linear-gradient(to top, rgba(4, 45, 107, 1), rgba(4, 45, 107, 0)),
+            url("assets(namira)/main-img.png");
+        background-repeat: no-repeat;
+        background-size: 300%; 
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        width: 95%;
+        
+    
+        & > h1 {
+            font-size: 25px;
+            text-align: start;
+            line-height: 1.2;
+            color: white;
+            width: 85%;
+            margin-left: 40px;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    }
+    
+    .button-tc {
+        gap: 10px;
+        width: 86%; 
+        margin-left: 25px;
+    }
+    
+    .button-tc img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 60px;
+    }
+    
+    .hero-button {
+        width: 350px;
+        margin-left: 25px;
+    }
+   
+    
+   
+    .search-container {
+        width: 90%;
+        height: 50px;
+        margin-bottom: 50px; 
+     
+    }
+    .input-wrapper input::placeholder {
+        font-size: 12px;
+        margin-right: 50px;
+      
+  
+    }
+    
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+    .footer-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%; /* Example width for responsive design */
+        padding: 10px 0; /* Minimal padding to avoid gaps */
+        margin: 0; /* Remove default margins */
+        background-color: #ffffff;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .button-content {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adjust gap inside the button */
+    }
+    
+    .footer-container > .footer-button + .footer-button {
+        margin-top: 20px; 
+    }
+}
 @media screen and (max-width: 375px){
     .download-section{
         & > img{
-            height: 350px;
+            height: 280px;
           
         }
       }
 
+      .main-section {
+        background-image: 
+            linear-gradient(to top, rgba(4, 45, 107, 1), rgba(4, 45, 107, 0)),
+            url("assets(namira)/main-img.png");
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 100px;
+        width: 90%; /* Make it responsive */
+        max-width: 400px; /* Set a max width */
+        margin: 0 auto; /* Center align */
+    
+        & > h1 {
+            font-size: 22px;
+            text-align: start;
+            line-height: 1.2;
+            color: white;
+            width: 90%; /* Use full width of the container */
+            margin-left: 0;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+    }
+    
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+
+    }
+    
+    .button-tc, .hero-button, .search-container {
+        width: 90%; /* Make all elements take up 90% of the screen width */
+        max-width: 400px; /* Set a max width for larger screens */
+        margin: 0 auto; /* Center align */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .button-tc{
+        & > span{
+            position: relative;
+            right: 20px;
+        }
+    }
+    .button-tc img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        right: 20px;
+
+    }
+    .button-content{
+        position: relative;
+        right:50px ;
+    }
+    .hero-button img {
+        width: 25px;
+        height: 30px;
+    }
+    
+    .search-container {
+        height: 50px;
+        margin-bottom: 50px;
+        margin-bottom: 100px;
+        
+    }
+    
+    .search-container input {
+        width: 100%; /* Input spans full width of the container */
+        height: 100%;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .input-wrapper input::placeholder {
+        font-size: 12px;
+        margin-right: 70px;
+      
+  
+    }
+    
+    .footer-button {
+   &> .button-content{
+    position: relative;
+    left: 70px;
+   }
+    }
 }
