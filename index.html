@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 
 <body>
@@ -18,25 +19,26 @@
 
         <!-- header  -->
         <header>
+            <div class="divv">
             <div class="logo-container">
             <a href="#" id="ham"><i class="fa-solid fa-bars"></i></a>
             <a href="#"><img src="assets(namira)/logo.svg" alt="trucaller-logo"></a>
         </div>
             <div class="nav-list">
                 <ul>
-                    <a href="">
+                    <a href="android.html">
                         <li>Android app</li>
                     </a>
-                    <a href="">
+                    <a href="ios.html">
                         <li>ios app</li>
                     </a>
-                    <a href="">
+                    <a href="community.html">
                         <li>Community</li>
                     </a>
                     <a href="premium.html">
                         <li>Premium</li>
                     </a>
-                    <a href="">
+                    <a href="fraud_insurence.html">
                         <li>Fraud Insaurance</li><button class="btn">NEW</button>
                     </a>
                     <a href="business.html">
@@ -47,6 +49,7 @@
                     </a>
                 </ul>
             </div>
+        </div>
             <div class="nav-right">
                 <div class="nav-sidebar">
                     <div class="dropdown">
@@ -157,7 +160,7 @@
             <p>Truecaller is proud to be a leader in caller ID and spam blocking software as well as research around
                 call and SMS harassment.</p>
 
-            <button class="feature-btn1">See all features</button>
+            <a href="android.html"><button class="feature-btn1" id="sf-1">See all features</button></a>
         </div>
 
         <!-- //cards -->
@@ -165,10 +168,12 @@
         <div class="feature-card-section">
 
             <!-- //card-1  -->
+            
+
             <div class="feature-card">
                 <div class="feature-card-content">
-                    <img src="assets(namira)/phone-img-1.jpeg" alt="Phone" class="phone-image">
-                    <button class="feature-card-button">Caller ID</button>
+                    <video src="assets(namira)/phone-vid-1.mp4" class="phone-image"></video>
+                    <a href="android.html"><button class="feature-card-button">Caller ID</button></a>
                 </div>
                 <div class="static-text">Identify incoming calls from unknown numbers</div>
             </div>
@@ -176,8 +181,8 @@
             <!-- //card-2  -->
             <div class="feature-card">
                 <div class="feature-card-content">
-                    <img src="assets(namira)/phone-img-2.jpeg" alt="Phone" class="phone-image">
-                    <button class="feature-card-button">Spam Blocking</button>
+                    <video src="assets(namira)/phone-vid-2.mp4" alt="Phone" class="phone-image"></video>
+                    <a href="spam_call.html"><button class="feature-card-button">Spam Blocking</button></a>
                 </div>
                 <div class="static-text">Block numbers</div>
             </div>
@@ -185,8 +190,8 @@
             <!-- //card-3  -->
             <div class="feature-card">
                 <div class="feature-card-content">
-                    <img src="assets(namira)/phone-img-3.jpeg" alt="Phone" class="phone-image">
-                    <button class="feature-card-button">SMS Fraud Protection</button>
+                    <video src="assets(namira)/phone-vid-3.mp4" alt="Phone" class="phone-image"></video>
+                    <a href="message_id.html"><button class="feature-card-button">SMS Fraud Protection</button></a>
                 </div>
                 <div class="static-text">Stay safe from fraud SMS and links</div>
             </div>
@@ -194,14 +199,17 @@
             <!-- //card-4  -->
             <div class="feature-card">
                 <div class="feature-card-content">
-                    <img src="assets(namira)/phone-img-3.jpeg" alt="Phone" class="phone-image">
+                    <video src="assets(namira)/phone-vid-4.mp4" alt="Phone" class="phone-image"></video>
                     <button class="feature-card-button">Messaging</button>
                 </div>
                 <div class="static-text">No need to switch to other apps</div>
             </div>
         </div>
     </div>
-
+<script src="script.js"></script>
+<div class="feature-text-1">
+    <a href="android.html" style="text-decoration: none; "><button class="feature-btn1" id="sf-2">See all features</button></a>
+</div>
     <!-- //section Our fight against spam in 2023  -->
 
     <section class="trust-section">
@@ -308,7 +316,7 @@
 
             <div class="article-box">
                 <!-- //first-box  -->
-                <a href="#" class="box-link">
+                <a href="https://www.truecaller.com/blog/scam-alert/e-challan-scams-on-the-rise-how-to-spot-fake-fines-and-stay-scam-free" class="box-link">
                   <div class="box">
                     <h4><i class="fa-solid fa-circle"></i> Scam Alert</h4>
                     <img src="assets(namira)/article-img-1.avif" alt="article">
@@ -318,7 +326,7 @@
                 </a>
               
                 <!-- //second-box  -->
-                <a href="#" class="box-link">
+                <a href="https://www.truecaller.com/blog/scam-alert/is-your-identity-safe" class="box-link">
                   <div class="box">
                     <h4><i class="fa-solid fa-circle"></i> Scam Alert</h4>
                     <img src="assets(namira)/article-img-2.jpg" alt="article">
@@ -328,7 +336,7 @@
                 </a>
               
                 <!-- //third-box  -->
-                <a href="#" class="box-link">
+                <a href="https://www.truecaller.com/blog/features/truecaller-verified-badge" class="box-link">
                   <div class="box">
                     <h4><i id="green" class="fa-solid fa-circle"></i> Features</h4>
                     <img src="assets(namira)/article-img-3.png" alt="article">
