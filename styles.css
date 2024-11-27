@@ -223,6 +223,7 @@ header {
     gap: 5px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 .hero-button img {
@@ -234,6 +235,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+   
 }
 
 .text-content {
@@ -246,6 +248,7 @@ header {
 .button-name {
     font-size: 14px;
     color: #333;
+    text-decoration: none;
     font-weight: 600;
 }
 
@@ -838,6 +841,9 @@ header {
             margin-bottom: 5px;
         }
     }
+}
+.no-text-decoration {
+    text-decoration: none;
 }
 
 .dwnld-button {
@@ -1802,14 +1808,11 @@ height: 30px;
     }
     #gp-btn{
         display: flex;
-        width: 40%;
-        &> .button-content{
-            width: 230px;
-            padding-left: 35px;
-        }
+        width: 85%;
+
     }
     #ios-btn{
-            width: 40%;
+            width: 85%;
         
     }
     
@@ -2018,7 +2021,7 @@ height: 30px;
      }
 
      #ios-btn{
-             width: 45%;
+             width: 85%;
          
      }
      .main-section {
@@ -2277,7 +2280,7 @@ height: 30px;
     }
     
 }
-@media screen and (max-width:415px) {
+@media screen and (max-width:417px) {
 
     .main-section {
         background-image: 
@@ -2307,15 +2310,21 @@ height: 30px;
             width: 85%;
             margin-left: 40px;
         }
+      
+        .button-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+            & > .hero-button {
+                width: 330px;
+                margin-left: 25px;
+            }
+        }
     }
     
-    .button-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 20px;
-        flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
-    }
+    
     
     .button-tc {
         gap: 10px;
@@ -2330,10 +2339,7 @@ height: 30px;
         margin-left: 60px;
     }
     
-    .hero-button {
-        width: 350px;
-        margin-left: 25px;
-    }
+   
    
     
    
@@ -2398,7 +2404,7 @@ height: 30px;
         }
          }
 }
-@media screen and (max-width: 376px){
+@media screen and (max-width: 379px){
     .download-section{
         & > img{
             height: 280px;
@@ -2450,7 +2456,7 @@ height: 30px;
 
     }
     
-    .button-tc, .hero-button, .search-container {
+    .button-tc, .search-container {
         width: 90%; /* Make all elements take up 90% of the screen width */
         max-width: 400px; /* Set a max width for larger screens */
         margin: 0 auto; /* Center align */
@@ -2465,6 +2471,14 @@ height: 30px;
         & > span{
             position: relative;
             right: 20px;
+        }
+    }
+    .button-container{
+        & > #a{
+            width: 88%;
+        }
+        & > #b{
+            width: 88%;
         }
     }
     .button-tc img {
