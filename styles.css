@@ -117,10 +117,17 @@ header {
     font-weight: 600;
     background-color: transparent;
     padding-left: 20px;
+    border: none;
     
 }
 
-
+.dropdown select:focus{
+    border: none;
+    outline: none;
+}
+.dropdown select option{
+    background-color: rgba(129, 127, 127, 0.537);
+}
 .dropdown .fa-caret-down {
     color: white;
     font-size: 14px;

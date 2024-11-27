@@ -177,12 +177,6 @@ document.getElementById("close-modal-signin").addEventListener("click", () => {
     modalSignin.style.display = "none";
 });
 
-// Handle Dropdown for Country Selection
-const countryText = document.querySelector('.signin p span');
-const dropdown = document.querySelector('.dropdown');
-countryText.addEventListener("click", () => {
-    dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
-});
 
 // Handle Checkbox for Enhanced Search
 const enhancedSearchCheckbox = document.getElementById("enhancedSearch");
@@ -196,4 +190,29 @@ enhancedSearchCheckbox.addEventListener("change", () => {
 });
 
 
-// download button
+// googleplay button
+document.addEventListener('DOMContentLoaded', function () {
+    const googlePlayButtons = document.querySelectorAll('.googleplay');
+    console.log(googlePlayButtons)
+    googlePlayButtons.forEach(button => {
+        button.onclick = function () {
+            window.location.href = 'play-store.html'; 
+        };
+    });
+});
+
+
+// app store button
+
+document.addEventListener('DOMContentLoaded', function () {
+    const applePlayButtons = document.querySelectorAll('.apple15');
+    console.log(applePlayButtons)
+    applePlayButtons.forEach(button => {
+        button.onclick = function () {
+            window.location.href = 'app-store.html'; 
+        };
+    });
+});
+
+
+//dropdown
