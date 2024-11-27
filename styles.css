@@ -390,6 +390,7 @@ header {
     border: none;
     width: 170px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 /* //card-section here  */
@@ -408,6 +409,7 @@ header {
 
 .feature-card-content {
     transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
 }
 .phone-image {
     width: 84%; /* Make the image smaller and responsive */
@@ -524,6 +526,7 @@ header {
     font-weight: 600;
     margin-bottom: 70px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 /* //brand-logo-section  */
@@ -597,8 +600,8 @@ header {
     border-radius: 30px;
     border: 2px #0a6cff solid;
     font-weight:700;
+    cursor: pointer;
 }
-
 /* // impact-section  */
 
 .impact-section{
@@ -648,6 +651,7 @@ header {
     border-radius: 30px;
     border: 2px #0a6cff solid;
     font-weight:700;
+    cursor: pointer;
 }
 
 /* //see our latest article  */
@@ -879,6 +883,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        cursor: pointer;
         & > p{
             color: #6b7280;
             font-size: 12px;
