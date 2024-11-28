@@ -14,12 +14,12 @@ document.querySelectorAll('.feature-card').forEach(card => {
     const video = card.querySelector('.phone-image');
 
     card.addEventListener('mouseover', () => {
-        video.play(); // Start video playback on hover
+        video.play(); 
     });
 
     card.addEventListener('mouseleave', () => {
-        video.pause(); // Pause playback on hover exit
-        video.currentTime = 0; // Reset video to the start
+        video.pause(); 
+        video.currentTime = 0;
     });
 });
 const modal = document.createElement("div");
@@ -215,4 +215,98 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//dropdown
+//ham
+
+const hamButton = document.getElementById('ham');
+
+
+hamButton.addEventListener('click', () => {
+ 
+    let slidingMenu = document.getElementById('sliding-menu');
+    
+    if (!slidingMenu) {
+       
+        slidingMenu = document.createElement('div');
+        slidingMenu.id = 'sliding-menu';
+
+  
+        Object.assign(slidingMenu.style, {
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            height: '100%',
+            width: '40%', 
+            backgroundColor: '#ffffff', 
+            color: '#000000',
+            boxShadow: '2px 0 10px rgba(0, 0, 0, 0.5)',
+            zIndex: '1000',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
+            padding: '30px',
+            gap: '15px', 
+            transform: 'translateX(-100%)', 
+            transition: 'transform 0.3s ease',
+            fontFamily: `'Arial', sans-serif`, 
+        });
+
+        const navItems = [
+            { text: 'Android app', href: 'android.html' },
+            { text: 'iOS app', href: 'ios.html' },
+            { text: 'Community', href: 'community.html' },
+            { text: 'Premium', href: 'premium.html' },
+            { text: 'Fraud Insurance', href: 'fraud_insurance.html' },
+            { text: 'Business', href: 'business.html' },
+            { text: 'Scam Alert', href: 'scam-alert.html' }
+        ];
+
+
+        navItems.forEach((item) => {
+            const menuItem = document.createElement('a');
+            menuItem.textContent = item.text;
+            menuItem.href = item.href; 
+            
+
+            Object.assign(menuItem.style, {
+                textDecoration: 'none',
+                color: '#000000', 
+                fontSize: '18px', 
+                padding: '10px 20px',
+                borderRadius: '5px',
+                transition: 'background-color 0.3s ease, color 0.3s ease',
+                width: '100%', 
+                marginBottom: '10px', 
+                display: 'block', 
+                borderBottom: '1px solid #bdc3c7', 
+            });
+
+            
+            menuItem.addEventListener('mouseover', () => {
+                menuItem.style.backgroundColor = '#f1f1f1'; 
+                menuItem.style.color = '#1abc9c'; 
+            });
+            menuItem.addEventListener('mouseout', () => {
+                menuItem.style.backgroundColor = 'transparent';
+                menuItem.style.color = '#000000'; 
+            });
+
+       
+            slidingMenu.appendChild(menuItem);
+        });
+
+    
+        document.body.appendChild(slidingMenu);
+
+      
+        setTimeout(() => {
+            slidingMenu.style.transform = 'translateX(0)';
+        }, 10);
+    } else {
+        
+        slidingMenu.style.transform = 'translateX(-100%)';
+        setTimeout(() => {
+            slidingMenu.remove();
+        }, 300); 
+    }
+});
