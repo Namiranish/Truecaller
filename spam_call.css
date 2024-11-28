@@ -192,7 +192,7 @@ main{
     text-align: center;
     font-size: 32px;
     
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: -1.3px;
 }
 .top_banner_text{
@@ -303,7 +303,7 @@ main{
 }
 .bottom_banner h1{
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -2px;
     padding-bottom: 10px;
 }
@@ -314,7 +314,7 @@ main{
 }
 #bb_btn{
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     word-spacing: 3px;
     padding: 20px 44px;
     border-radius: 100px;
@@ -867,7 +867,7 @@ footer{
         top:4%;
         transform: translate(-50,-50);
         font-size: 32px;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: -1.3px;
     }
     .ri-arrow-drop-right-line{
@@ -922,7 +922,7 @@ footer{
     }
     .bottom_banner h1{
         font-size: 32px;
-        font-weight: 800;
+        font-weight: 600;
         letter-spacing: -2px;
         padding-bottom: 12px;
     }

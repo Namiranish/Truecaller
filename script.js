@@ -182,7 +182,7 @@ document.getElementById("close-modal-signin").addEventListener("click", () => {
 const enhancedSearchCheckbox = document.getElementById("enhancedSearch");
 enhancedSearchCheckbox.addEventListener("change", () => {
     if (enhancedSearchCheckbox.checked) {
-        enhancedSearchCheckbox.parentNode.style.backgroundColor = "#0a6cff";
+        enhancedSearchCheckbox.parentNode.style.backgroundColor = "white";
         enhancedSearchCheckbox.parentNode.querySelector('input').style.color = "#fff";
     } else {
         enhancedSearchCheckbox.parentNode.style.backgroundColor = "#fff";

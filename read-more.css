@@ -26,6 +26,7 @@ header {
 
     
 }
+
  .logo-container{
     display: flex;
     align-items: center;
@@ -525,6 +526,10 @@ header {
   .article-box {
     display: flex;
     gap: 20px;
+    & > a{
+        text-decoration: none;
+        color: black;
+    }
   }
   
   .box {
