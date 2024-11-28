@@ -216,20 +216,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //ham
-
 const hamButton = document.getElementById('ham');
 
-
 hamButton.addEventListener('click', () => {
- 
+
     let slidingMenu = document.getElementById('sliding-menu');
     
     if (!slidingMenu) {
-       
+
         slidingMenu = document.createElement('div');
         slidingMenu.id = 'sliding-menu';
 
-  
+        // Styling for the sliding menu
         Object.assign(slidingMenu.style, {
             position: 'fixed',
             top: '0',
@@ -261,16 +259,40 @@ hamButton.addEventListener('click', () => {
             { text: 'Scam Alert', href: 'scam-alert.html' }
         ];
 
+        // Create and add the cancel (cross) button
+        const cancelButton = document.createElement('button');
+        cancelButton.textContent = '×'; // The cross symbol
+        cancelButton.id = 'cancel-button';
+        Object.assign(cancelButton.style, {
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            background: 'none',
+            border: 'none',
+            color: '#000000',
+            fontSize: '30px',
+            cursor: 'pointer',
+            fontFamily: 'Arial, sans-serif',
+        });
 
+        cancelButton.addEventListener('click', () => {
+            slidingMenu.style.transform = 'translateX(-100%)';
+            setTimeout(() => {
+                slidingMenu.remove();
+            }, 300);
+        });
+
+        slidingMenu.appendChild(cancelButton);
+
+        // Create menu items
         navItems.forEach((item) => {
             const menuItem = document.createElement('a');
             menuItem.textContent = item.text;
-            menuItem.href = item.href; 
-            
+            menuItem.href = item.href;
 
             Object.assign(menuItem.style, {
                 textDecoration: 'none',
-                color: '#000000', 
+                color: '#000000',
                 fontSize: '18px', 
                 padding: '10px 20px',
                 borderRadius: '5px',
@@ -281,7 +303,6 @@ hamButton.addEventListener('click', () => {
                 borderBottom: '1px solid #bdc3c7', 
             });
 
-            
             menuItem.addEventListener('mouseover', () => {
                 menuItem.style.backgroundColor = '#f1f1f1'; 
                 menuItem.style.color = '#1abc9c'; 
@@ -291,22 +312,21 @@ hamButton.addEventListener('click', () => {
                 menuItem.style.color = '#000000'; 
             });
 
-       
             slidingMenu.appendChild(menuItem);
         });
 
-    
+        // Append the sliding menu to the body
         document.body.appendChild(slidingMenu);
 
-      
+        // Animate the sliding menu
         setTimeout(() => {
             slidingMenu.style.transform = 'translateX(0)';
         }, 10);
+
     } else {
-        
         slidingMenu.style.transform = 'translateX(-100%)';
         setTimeout(() => {
             slidingMenu.remove();
-        }, 300); 
+        }, 300);
     }
 });
